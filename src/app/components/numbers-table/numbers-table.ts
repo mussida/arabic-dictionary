@@ -24,13 +24,13 @@ export class NumbersTableComponent {
     { value: 1, italian: 'uno', arabic: 'واحد', transliteration: 'wahid', audio: 'audio/numbers/1.m4a' },
     { value: 2, italian: 'due', arabic: 'اثنان', transliteration: 'ithnan', audio: 'audio/numbers/2.m4a' },
     { value: 3, italian: 'tre', arabic: 'ثلاثة', transliteration: 'thalatha', audio: 'audio/numbers/3.m4a' },
-    { value: 4, italian: 'quattro', arabic: 'أربعة', transliteration: 'arbaʿa', audio: 'audio/numbers/4.m4a' },
+    { value: 4, italian: 'quattro', arabic: 'أربعة', transliteration: 'arba3a', audio: 'audio/numbers/4.m4a' },
     { value: 5, italian: 'cinque', arabic: 'خمسة', transliteration: 'khamsa', audio: 'audio/numbers/5.m4a' },
     { value: 6, italian: 'sei', arabic: 'ستة', transliteration: 'sitta', audio: 'audio/numbers/6.m4a' },
-    { value: 7, italian: 'sette', arabic: 'سبعة', transliteration: 'sabʿa', audio: 'audio/numbers/7.m4a' },
+    { value: 7, italian: 'sette', arabic: 'سبعة', transliteration: 'sab3a', audio: 'audio/numbers/7.m4a' },
     { value: 8, italian: 'otto', arabic: 'ثمانية', transliteration: 'thamāniya', audio: 'audio/numbers/8.m4a' },
-    { value: 9, italian: 'nove', arabic: 'تسعة', transliteration: 'tisʿa', audio: 'audio/numbers/9.m4a' },
-    { value: 10, italian: 'dieci', arabic: 'عشرة', transliteration: 'ʿashara', audio: 'audio/numbers/10.m4a' },
+    { value: 9, italian: 'nove', arabic: 'تسعة', transliteration: 'tis3a', audio: 'audio/numbers/9.m4a' },
+    { value: 10, italian: 'dieci', arabic: 'عشرة', transliteration: '3ashara', audio: 'audio/numbers/10.m4a' },
   ];
 
   constructor(private cdr: ChangeDetectorRef) {

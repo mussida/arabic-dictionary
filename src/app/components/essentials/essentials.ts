@@ -20,20 +20,20 @@ export class EssentialsComponent {
   playingIndex: number | null = null;
 
   phrases: EssentialPhrase[] = [
+    { italian: 'Un pacchetto di sigarette Cleopatra', arabic: 'علبة سجاير كليوباترا', transliteration: '3elbet sagāyer Kleopatra', audio: 'audio/essentials/11.m4a' },
     { italian: 'Andiamo nel deserto', arabic: 'نروح الصحراء', transliteration: 'nerūḥ el-ṣaḥrā', audio: 'audio/essentials/1.m4a' },
     { italian: 'Guarda le stelle / il cielo', arabic: 'بصّ النجوم / السما', transliteration: 'boṣṣ el-nogūm / el-samā', audio: 'audio/essentials/2.m4a' },
     { italian: 'Natale sul Nilo', arabic: 'كريسماس على النيل', transliteration: 'Krismas ʿala el-Nīl', audio: 'audio/essentials/3.m4a' },
-    { italian: 'Possiamo attraversare il Nilo sulla tua barca?', arabic: 'ممكن نعدّي النيل بمركبك؟', transliteration: 'momken neʿaddi el-Nīl be-markabak?', audio: 'audio/essentials/4.m4a' },
-    { italian: 'Mi presti il tuo cammello?', arabic: 'ممكن أستلف الجمل بتاعك؟', transliteration: 'momken astalef el-gamal betaʿak?', audio: 'audio/essentials/5.m4a' },
+    { italian: 'Possiamo attraversare il Nilo sulla tua barca?', arabic: 'ممكن نعدّي النيل بمركبك؟', transliteration: 'momken ne 3addi el-Nīl be-markabak?', audio: 'audio/essentials/4.m4a' },
+    { italian: 'Mi presti il tuo cammello?', arabic: 'ممكن أستلف الجمل بتاعك؟', transliteration: 'momken astalef el-gamal beta3ak?', audio: 'audio/essentials/5.m4a' },
     { italian: 'Quanto costa questo tappeto?', arabic: 'بكام السجادة دي؟', transliteration: 'bekām el-saggāda di?', audio: 'audio/essentials/14.m4a' },
     { italian: 'Mi renderesti molto felice', arabic: 'تفرّحني قوي', transliteration: 'tefarraḥni awi', audio: 'audio/essentials/6.m4a' },
-    { italian: 'Tranquilli, ci penso io', arabic: 'متخافوش، أنا هظبطها', transliteration: 'metkhāfūsh, ana ha-zabbiṭha', audio: 'audio/essentials/7.m4a' },
+    // { italian: 'Tranquilli, ci penso io', arabic: 'متخافوش، أنا هظبطها', transliteration: 'metkhāfūsh, ana ha-zabbiṭha', audio: 'audio/essentials/7.m4a' },
     { italian: 'Per favore', arabic: 'لو سمحت', transliteration: 'law samaḥt', audio: 'audio/essentials/8.m4a' },
     { italian: 'Quanto costa?', arabic: 'بكام؟', transliteration: 'bekām?', audio: 'audio/essentials/9.m4a' },
-    { italian: 'Grazie', arabic: 'شكراً', transliteration: 'shukran', audio: 'audio/essentials/10.m4a' },
-    { italian: 'Prego', arabic: 'عفواً', transliteration: 'ʿafwan', audio: 'audio/essentials/11.m4a' },
-    { italian: 'Un pacchetto di sigarette Cleopatra', arabic: 'علبة سجاير كليوباترا', transliteration: 'ʿelbet sagāyer Kleopatra', audio: 'audio/essentials/12.m4a' },
-    { italian: 'Dove si trova il bagno?', arabic: 'الحمّام فين؟', transliteration: 'el-ḥammām fēn?', audio: 'audio/essentials/13.m4a' },
+    { italian: 'Grazie', arabic: 'شكراً', transliteration: 'shukran', audio: 'audio/essentials/15.m4a' },
+    { italian: 'Prego', arabic: 'عفواً', transliteration: '3afwan', audio: 'audio/essentials/10.m4a' },
+    { italian: 'Dove si trova il bagno?', arabic: 'الحمّام فين؟', transliteration: 'el-ḥammām fēn?', audio: 'audio/essentials/12.m4a' },
     { italian: 'Siamo italiani', arabic: 'إحنا إيطاليين', transliteration: 'eḥna īṭālyīn', audio: 'audio/essentials/14.m4a' },
   ];
 

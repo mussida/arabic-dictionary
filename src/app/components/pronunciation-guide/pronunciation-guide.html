@@ -1,0 +1,31 @@
+<div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+  <div class="font-title text-sm text-primary mb-2">
+    Guida alla pronuncia
+  </div>
+
+  <p class="text-sm text-slate-700 leading-relaxed">
+    Nei testi trovi spesso il numero
+    <span class="font-mono font-medium">3</span>.
+    Non è un numero: viene usato per indicare la lettera araba
+    <span class="text-lg">ع</span>
+    (<em>ʿayn</em>).
+    È un suono gutturale, profondo, che non esiste in italiano.
+  </p>
+
+  <div class="flex items-center gap-3 mt-3">
+    <button
+      (click)="play3()"
+      class="h-9 w-9 rounded-full flex items-center justify-center
+             hover:bg-primary/10 active:scale-95 transition"
+      [class.text-primary]="isPlaying"
+      aria-label="Ascolta la pronuncia della lettera ʿayn"
+    >
+      @if (!isPlaying) { ▶ }
+      @if (isPlaying) { ❚❚ }
+    </button>
+
+    <span class="text-sm text-slate-500">
+      Ascolta il suono della lettera <strong>ʿayn</strong>
+    </span>
+  </div>
+</div>
