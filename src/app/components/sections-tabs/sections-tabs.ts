@@ -13,12 +13,12 @@ export class SectionsTabs {
   >();
 
   sections = [
-    { id: 'numbers', label: 'Numbers' },
-    { id: 'bar', label: 'Bar' },
     { id: 'essentials', label: 'Essentials' },
+    { id: 'bar', label: 'Bar' },
+    { id: 'numbers', label: 'Numbers' },
   ] as const;
 
-  active: 'numbers' | 'bar' | 'essentials' = 'numbers';
+  active: 'numbers' | 'bar' | 'essentials' = 'essentials';
 
   select(section: 'numbers' | 'bar' | 'essentials') {
     this.active = section;
