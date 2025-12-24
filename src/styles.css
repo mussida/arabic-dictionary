@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+/* Design tokens */
+@theme {
+  /* Palette (puoi cambiarla quando vuoi) */
+  --color-primary: #512430;
+  --color-secondary: #621f32;
+  --color-tertiary: #873158;
+  --color-fourth: #db665b;
+  --color-fifth: #eda4b3;
+  --color-sixth: #f7d6d0;
+
+  /* Optional */
+  --color-contact: #b4c7fb;
+
+  /* Typography */
+  --font-family-title: "JetBrains Mono", monospace;
+  --font-family-text: "JetBrains Mono", monospace;
+}

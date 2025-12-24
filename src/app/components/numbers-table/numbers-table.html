@@ -1,0 +1,46 @@
+<div class="bg-white rounded-xl border border-primary/20 overflow-hidden">
+    <div class="px-4 py-3 border-b border-primary/10">
+        <h2 class="text-lg font-title text-primary">
+            Numeri (1–10)
+        </h2>
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="w-full text-sm font-text">
+            <thead class="bg-slate-100 text-slate-600">
+                <tr>
+                    <th class="px-4 py-2 text-left">#</th>
+                    <th class="px-4 py-2 text-left">Italiano</th>
+                    <th class="px-4 py-2 text-left">Arabo</th>
+                    <th class="px-4 py-2 text-left">Pronuncia</th>
+                    <th class="px-4 py-2 text-center w-12">🔊</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @for (n of numbers; track $index) {
+                <tr class="border-t border-slate-100 hover:bg-slate-50">
+                    <td class="px-4 py-2 font-medium">{{ n.value }}</td>
+                    <td class="px-4 py-2">{{ n.italian }}</td>
+                    <td class="px-4 py-2 text-lg" dir="rtl">
+                        {{ n.arabic }}
+                    </td>
+                    <td class="px-4 py-2 text-slate-600">
+                        {{ n.transliteration }}
+                    </td>
+                    <td class="px-4 py-2 text-center">
+                        <button (click)="play(n, $index)" class="h-8 w-8 rounded-full flex items-center justify-center
+                     hover:bg-primary/10 active:scale-95 transition" [class.text-primary]="playingIndex === $index"
+                            aria-label="Play audio">
+                            @if (playingIndex !== $index) {
+                            <span>▶</span>}
+                            @if (playingIndex === $index) {
+                            <span>❚❚</span>}
+                        </button>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,8 @@
+<div class="flex gap-1 bg-slate-100 p-1 rounded-xl">
+    @for (s of sections; track $index) {
+    <button (click)="select(s.id)" class="flex-1 py-2 rounded-lg font-title text-sm transition
+           active:scale-95" [class.bg-white]="active === s.id" [class.shadow]="active === s.id"
+        [class.text-primary]="active === s.id">
+        {{ s.label }}
+    </button>}
+</div>

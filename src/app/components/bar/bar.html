@@ -1,0 +1,37 @@
+<div class="grid gap-4">
+  @for (p of phrases; track $index) {
+    <div
+      class="bg-white border border-primary/20 rounded-xl p-4
+             flex items-center justify-between gap-4"
+    >
+      <div class="flex-1">
+        <div class="font-title text-sm text-primary">
+          {{ p.italian }}
+        </div>
+
+        <div class="text-xl mt-1" dir="rtl">
+          {{ p.arabic }}
+        </div>
+
+        <div class="text-sm text-slate-500 mt-1">
+          {{ p.transliteration }}
+        </div>
+      </div>
+
+      <button
+        (click)="play(p, $index)"
+        class="h-10 w-10 rounded-full flex items-center justify-center
+               hover:bg-primary/10 active:scale-95 transition"
+        [class.text-primary]="playingIndex === $index"
+        aria-label="Play audio"
+      >
+        @if (playingIndex !== $index) {
+          <span>▶</span>
+        }
+        @if (playingIndex === $index) {
+          <span>❚❚</span>
+        }
+      </button>
+    </div>
+  }
+</div>
