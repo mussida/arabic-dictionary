@@ -34,7 +34,7 @@ export class EssentialsComponent {
     { italian: 'Grazie', arabic: 'شكراً', transliteration: 'shukran', audio: 'audio/essentials/15.m4a' },
     { italian: 'Prego', arabic: 'عفواً', transliteration: '3afwan', audio: 'audio/essentials/10.m4a' },
     { italian: 'Dove si trova il bagno?', arabic: 'الحمّام فين؟', transliteration: 'el-ḥammām fēn?', audio: 'audio/essentials/12.m4a' },
-    { italian: 'Siamo italiani', arabic: 'إحنا إيطاليين', transliteration: 'eḥna īṭālyīn', audio: 'audio/essentials/14.m4a' },
+    // { italian: 'Siamo italiani', arabic: 'إحنا إيطاليين', transliteration: 'eḥna īṭālyīn', audio: 'audio/essentials/14.m4a' },
   ];
 
   constructor(private cdr: ChangeDetectorRef) {
